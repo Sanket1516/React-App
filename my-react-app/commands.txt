@@ -1,0 +1,47 @@
+##npm create vite@latest
+Need to install the following packages:
+create-vite@8.2.0
+##Ok to proceed? (y) y
+
+
+> npx
+> create-vite
+
+│
+◇  Project name:
+│  ##my-react-app
+│
+◇  Select a framework:
+│  ##React
+│
+◇  Select a variant:
+│  ##JavaScript
+│
+◇  Use rolldown-vite (Experimental)?:
+│  ##No
+│
+◇  Install with npm and start now?
+│  ##Yes
+│
+◇  Scaffolding project in C:\Drive D\Courses\React App\my-react-app...
+│
+◇  Installing dependencies with npm...
+
+added 157 packages, and audited 158 packages in 26s
+
+33 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+│
+◇  Starting dev server...
+
+> my-react-app@0.0.0 dev
+> vite
+
+
+  VITE v7.3.1  ready in 451 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
