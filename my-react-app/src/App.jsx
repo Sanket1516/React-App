@@ -1,6 +1,7 @@
 import './App.css'
 import Title from './Title.jsx';
 import Paragraph from './Paragraph.jsx';
+import ProductTab from './ProductTab.jsx';
 // function App() {
 //   return <h1>Hello World</h1>;
 // }
@@ -27,12 +28,21 @@ import Paragraph from './Paragraph.jsx';
 
 
 //if we have to return multiple component
+// function App(){
+//   return (
+//     <div>
+//       <Title/>
+//       <Paragraph/>
+//     </div>
+//   );
+// }
+
+
 function App(){
   return (
-    <div>
-      <Title/>
-      <Paragraph/>
-    </div>
+    <>
+    <ProductTab/>
+    </>
   );
 }
 
