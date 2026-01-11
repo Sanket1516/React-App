@@ -1,21 +1,23 @@
 import './App.css'
+import Title from './Title.jsx';
+import Paragraph from './Paragraph.jsx';
 // function App() {
 //   return <h1>Hello World</h1>;
 // }
 
 //how to create a component
-function Title() {
-  return (
-    //content it haves to return
-  <h1>Hello World</h1>
-  );
-}
+// function Title() {
+//   return (
+//     //content it haves to return
+//   <h1>Hello World</h1>
+//   );
+// }
 
-function Paragraph(){
-  return (
-    <p>I am a best coder in the World</p>
-  );
-}
+// function Paragraph(){
+//   return (
+//     <p>I am a best coder in the World</p>
+//   );
+// }
 
 //if we have to return a single component
 // function App() {
