@@ -20,15 +20,15 @@ import Product from './Product.jsx';
 //     );
 // }
 //we can also pass other types of props like arrays, objects, functions, etc.
-// function ProductTab(){
-//     return (
-//         <>
-//         <Product title="Laptop" price = {1000} features={{durable,lightweight,heavy}}/>
-//         <Product title="Mouse" price = {50} features={{wireless,ergonomic}}/>
-//         <Product title="Keyboard" price = {100} features={{mechanical,backlit}}/>
-//         </>
-//     );
-// }
+function ProductTab(){
+    return (
+        <>
+        <Product title="Laptop" price = {1000} features={["durable","lightweight","heavy"]}/>
+        <Product title="Mouse" price = {50} features={["wireless","ergonomic"]}/>
+        <Product title="Keyboard" price = {100} features={["mechanical","backlit"]}/>
+        </>
+    );
+}
 
 //or we can pass an array
 // function ProductTab(){
@@ -45,16 +45,16 @@ import Product from './Product.jsx';
 // }
 
 //to pass object
-function ProductTab(){
-    featuresLaptop = {a : "durable",b : "lightweight",c : "heavy"};
-    featuresMouse = {a : "wireless",b : "ergonomic"};
-    featuresKeyboard = {a : "mechanical",b : "backlit"};
-    return (
-        <>
-        <Product title="Laptop" price = {1000} features={featuresLaptop}/>
-        <Product title="Mouse" price = {50} features={featuresMouse}/>
-        <Product title="Keyboard" price = {100} features={featuresKeyboard}/>
-        </>
-    );
-}
+// function ProductTab(){
+//     featuresLaptop = {a : "durable",b : "lightweight",c : "heavy"};
+//     featuresMouse = {a : "wireless",b : "ergonomic"};
+//     featuresKeyboard = {a : "mechanical",b : "backlit"};
+//     return (
+//         <>
+//         <Product title="Laptop" price = {1000} features={featuresLaptop}/>
+//         <Product title="Mouse" price = {50} features={featuresMouse}/>
+//         <Product title="Keyboard" price = {100} features={featuresKeyboard}/>
+//         </>
+//     );
+// }
 export default ProductTab;
