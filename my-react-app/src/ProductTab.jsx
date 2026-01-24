@@ -10,25 +10,25 @@ import Product from './Product.jsx';
 //     );
 // }
 //use of props in react
-// function ProductTab(){
-//     return (
-//         <>
-//         <Product title="Laptop" price = {1000}/>
-//         <Product title="Mouse" price = {50}/>
-//         <Product title="Keyboard" price = {100}/>
-//         </>
-//     );
-// }
-//we can also pass other types of props like arrays, objects, functions, etc.
 function ProductTab(){
     return (
         <>
-        <Product title="Laptop" price = {1000} features={["durable","lightweight","heavy"]}/>
-        <Product title="Mouse" price = {50} features={["wireless","ergonomic"]}/>
-        <Product title="Keyboard" price = {100} features={["mechanical","backlit"]}/>
+        <Product title="Laptop" price = {1000}/>
+        <Product title="Mouse" price = {50}/>
+        <Product title="Keyboard" price = {100}/>
         </>
     );
 }
+//we can also pass other types of props like arrays, objects, functions, etc.
+// function ProductTab(){
+//     return (
+//         <>
+//         <Product title="Laptop" price = {1000} features={["durable","lightweight","heavy"]}/>
+//         <Product title="Mouse" price = {50} features={["wireless","ergonomic"]}/>
+//         <Product title="Keyboard" price = {100} features={["mechanical","backlit"]}/>
+//         </>
+//     );
+// }
 
 //or we can pass an array
 // function ProductTab(){

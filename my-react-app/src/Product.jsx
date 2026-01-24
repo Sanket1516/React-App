@@ -33,16 +33,39 @@
 
 
 //to render features as a list
-function Product({title,price,features}){
+// function Product({title,price,features}){
+//     return(
+//     <>
+//     <h1>{title}</h1>
+//     <h3>{price}</h3>
+//     <p>
+//         {features.map((feature) => (
+//             <li>{feature}</li>
+//         ))}
+//     </p>
+//     </>
+//     );
+// }
+
+//Conditionals in react
+//1st way if we have to get two components based on condition
+function Product({title,price}){
     return(
     <>
     <h1>{title}</h1>
     <h3>{price}</h3>
-    <p>
-        {features.map((feature) => (
-            <li>{feature}</li>
-        ))}
-    </p>
+    {price>=1000 ? <p>Discount of 10% available</p> : <a href="#">Get Discount</a>}
+    </>
+    );
+}
+
+//if we to return only one component based on condition
+function Product({title,price}){
+    return(
+    <>
+    <h1>{title}</h1>
+    <h3>{price}</h3>
+    {price>=1000 && <p>Discount of 10% available</p>}
     </>
     );
 }
