@@ -2,6 +2,7 @@ import './App.css'
 import Title from './Title.jsx';
 import Paragraph from './Paragraph.jsx';
 import ProductTab from './ProductTab.jsx';
+import Button from './Button.jsx';
 // function App() {
 //   return <h1>Hello World</h1>;
 // }
@@ -38,10 +39,19 @@ import ProductTab from './ProductTab.jsx';
 // }
 
 
+// function App(){
+//   return (
+//     <>
+//     <ProductTab/>
+//     </>
+//   );
+// }
+
+//Handling Events in React OnClick Event
 function App(){
   return (
     <>
-    <ProductTab/>
+    <Button/>
     </>
   );
 }
