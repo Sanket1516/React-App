@@ -3,7 +3,7 @@ import Title from './Title.jsx';
 import Paragraph from './Paragraph.jsx';
 import ProductTab from './ProductTab.jsx';
 import Button from './Button.jsx';
-import Counter from './Counter.jsx';
+import Counter from './counter.jsx';
 // function App() {
 //   return <h1>Hello World</h1>;
 // }

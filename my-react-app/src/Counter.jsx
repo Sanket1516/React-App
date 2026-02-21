@@ -1,7 +1,9 @@
+import { useState } from "react";
+
 function Counter(){
-    let count = 0;
+    let [count, setCount] = useState(0);
     function on_click(){
-        count += 1;
+        setCount(count+1);
         console.log(count);
     }
 
