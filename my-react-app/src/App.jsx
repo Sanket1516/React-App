@@ -3,6 +3,7 @@ import Title from './Title.jsx';
 import Paragraph from './Paragraph.jsx';
 import ProductTab from './ProductTab.jsx';
 import Button from './Button.jsx';
+import Counter from './Counter.jsx';
 // function App() {
 //   return <h1>Hello World</h1>;
 // }
@@ -48,12 +49,23 @@ import Button from './Button.jsx';
 // }
 
 //Handling Events in React OnClick Event
+// function App(){
+//   return (
+//     <>
+//     <Button/>
+//     </>
+//   );
+// }
+
+// export default App
+
+//State in React
 function App(){
   return (
     <>
-    <Button/>
+    <Counter/>
     </>
   );
 }
 
-export default App
+export default App;    
