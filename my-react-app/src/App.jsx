@@ -1,9 +1,10 @@
 import './App.css'
-import Title from './Title.jsx';
-import Paragraph from './Paragraph.jsx';
-import ProductTab from './ProductTab.jsx';
-import Button from './Button.jsx';
-import Counter from './counter.jsx';
+// import Title from './Title.jsx';
+// import Paragraph from './Paragraph.jsx';
+// import ProductTab from './ProductTab.jsx';
+// import Button from './Button.jsx';
+// import Counter from './Counter.jsx';
+import Ludo from './Ludo.jsx';
 // function App() {
 //   return <h1>Hello World</h1>;
 // }
@@ -63,7 +64,7 @@ import Counter from './counter.jsx';
 function App(){
   return (
     <>
-    <Counter/>
+    <Ludo/>
     </>
   );
 }
