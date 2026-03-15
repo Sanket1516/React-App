@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { v4 as uuidv4 } from 'uuid';
 
 function TodoList(){
     let [input,setInput] = useState("");
@@ -10,7 +11,7 @@ function TodoList(){
 
     function addTask(){
         setTaskList((prev)=>{
-            return [...prev, input];
+            return [...prev, { id: uuidv4(), text: input }];
         });
         setInput("");
     }
@@ -23,7 +24,7 @@ function TodoList(){
         <hr />
         <ul>
             {TaskList.map((task)=>{
-                return <li>{task}</li>
+                return <li key={task.id}>{task.text}</li>
             })}
         </ul>        
         </>
