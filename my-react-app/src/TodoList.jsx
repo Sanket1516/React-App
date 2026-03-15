@@ -22,15 +22,31 @@ function TodoList(){
  
     }
 
-    function UpdateAll(){
-        setTaskList((prev) =>
-            prev.map((todo) => ({
+function UpdateAll() {
+    setTaskList((prev) => {
+        return prev.map((todo) => {
+            return {
                 ...todo,
                 text: todo.text.toUpperCase()
-            }))
-        );
-    }
-    
+            };
+        });
+    });
+}
+
+function updateTask(id) {
+    setTaskList((prev) => {
+        return prev.map((todo) => {
+            if (todo.id === id) {
+                return {
+                    ...todo,
+                    text: todo.text.toUpperCase()
+                };
+            }
+            return todo;
+        });
+    });
+}
+
     return(
         <>
         <input type="text" placeholder="Enter the task : " value={input} onChange={onChangeInput}/>
@@ -42,6 +58,7 @@ function TodoList(){
                 <li key={task.id}>
                     <span>{task.text}</span>
                     <button onClick={() => deleteTask(task.id)}>Delete</button>
+                    <button onClick={() => updateTask(task.id)}>Update</button>
                 </li>
             ))}
         </ul>
