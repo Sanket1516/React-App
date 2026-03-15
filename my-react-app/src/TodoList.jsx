@@ -16,6 +16,11 @@ function TodoList(){
         });
         setInput("");
     }
+
+    function deleteTask(id){
+     setTaskList((prev) => prev.filter((t) => t.id !== id));
+ 
+    }
     
     return(
         <>
@@ -24,9 +29,12 @@ function TodoList(){
         <br /><br /><br /><br />
         <hr />
         <ul>
-            {TaskList.map((task)=>{
-                return <li key={task.id}>{task.text}</li>
-            })}
+            {TaskList.map((task) => (
+                <li key={task.id}>
+                    <span>{task.text}</span>
+                    <button onClick={() => deleteTask(task.id)}>Delete</button>
+                </li>
+            ))}
         </ul>        
         </>
     );
