@@ -21,6 +21,15 @@ function TodoList(){
      setTaskList((prev) => prev.filter((t) => t.id !== id));
  
     }
+
+    function UpdateAll(){
+        setTaskList((prev) =>
+            prev.map((todo) => ({
+                ...todo,
+                text: todo.text.toUpperCase()
+            }))
+        );
+    }
     
     return(
         <>
@@ -35,7 +44,8 @@ function TodoList(){
                     <button onClick={() => deleteTask(task.id)}>Delete</button>
                 </li>
             ))}
-        </ul>        
+        </ul>
+        <button onClick={UpdateAll}>Update All</button>       
         </>
     );
 }
